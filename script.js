@@ -16,7 +16,7 @@ let roboStat = {
     isOn: true
 };
 
-class Robot {
+class FlawedRobot {
     constructor(roboName) {
         this.name = roboName;
         roboStat.roboLegions.push(this);
@@ -27,6 +27,28 @@ class Robot {
             console.log(`Silly Human, robo ${this.name} rampage!!!`);
         } else {
             console.log(`robo ${this.name} sleeps is off :( `);
+        }
+    }
+}
+
+class Robot {
+    constructor(roboName){
+        this.name = roboName;
+        this.awake = false;
+    }
+    wake(){
+        this.awake = true;
+        this.doIRampage();
+    }
+    sleep(){
+        this.awake = false;
+        this.doIRampage();
+    }
+    doIRampage(){
+        if(this.awake==true){
+            console.log(`robo ${this.name} is rampaging!`);
+        }else{
+            console.log(`robo ${this.name} sleeps :(`);
         }
     }
 }

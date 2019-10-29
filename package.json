@@ -1,0 +1,24 @@
+{
+  "name": "rampaging_robots",
+  "version": "1.0.0",
+  "description": "impure rampaging robots",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plasnid/rampaging_robots.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plasnid/rampaging_robots/issues"
+  },
+  "homepage": "https://github.com/Plasnid/rampaging_robots#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
